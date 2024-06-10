@@ -1,0 +1,91 @@
+{
+  "annotations": {
+    "changelogDate": "20240610094553"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "code",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "enabled",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "defaultImage",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultImageData",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    },
+    {
+      "fieldName": "cssStyle",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "text"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "Destination",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityField": "code",
+      "otherEntityName": "tour",
+      "otherEntityRelationshipName": "destination",
+      "relationshipName": "tours",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityField": "code",
+      "otherEntityName": "place",
+      "otherEntityRelationshipName": "destination",
+      "relationshipName": "places",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityField": "code",
+      "otherEntityName": "imageFile",
+      "otherEntityRelationshipName": "destination",
+      "relationshipName": "images",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityField": "code",
+      "otherEntityName": "menu",
+      "otherEntityRelationshipName": "destination",
+      "relationshipName": "menus",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityField": "code",
+      "otherEntityName": "content",
+      "otherEntityRelationshipName": "destination",
+      "relationshipName": "contents",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "relationshipName": "createdBy",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one",
+      "relationshipWithBuiltInEntity": true
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

@@ -1,0 +1,10 @@
+{
+  "jhipsterSampleApplication1App": {
+    "DurationMeasure": {
+      "null": "",
+      "MINUTES": "Minutes",
+      "HOURS": "Hours",
+      "DAYS": "Days"
+    }
+  }
+}

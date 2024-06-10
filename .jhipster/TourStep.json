@@ -1,0 +1,93 @@
+{
+  "annotations": {
+    "changelogDate": "20240610094558"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "code",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "enabled",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "icon",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "stepOrder",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "waitTime",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "waitTimeMeasure",
+      "fieldType": "DurationMeasure",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "MINUTES (Minutes),HOURS (Hours),DAYS (Days)"
+    },
+    {
+      "fieldName": "driveTime",
+      "fieldType": "Integer",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "driveTimeMeasure",
+      "fieldType": "DurationMeasure",
+      "fieldValidateRules": ["required"],
+      "fieldValues": "MINUTES (Minutes),HOURS (Hours),DAYS (Days)"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "TourStep",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityField": "code",
+      "otherEntityName": "content",
+      "otherEntityRelationshipName": "tourStep",
+      "relationshipName": "info",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "relationshipName": "createdBy",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one",
+      "relationshipWithBuiltInEntity": true
+    },
+    {
+      "otherEntityField": "code",
+      "otherEntityName": "tour",
+      "otherEntityRelationshipName": "steps",
+      "relationshipName": "tour",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    },
+    {
+      "otherEntityField": "code",
+      "otherEntityName": "place",
+      "relationshipName": "place",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one",
+      "relationshipValidateRules": "required"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

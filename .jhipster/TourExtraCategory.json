@@ -1,0 +1,82 @@
+{
+  "annotations": {
+    "changelogDate": "20240610094601"
+  },
+  "applications": "*",
+  "dto": "mapstruct",
+  "fields": [
+    {
+      "fieldName": "code",
+      "fieldType": "String",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "enabled",
+      "fieldType": "Boolean",
+      "fieldValidateRules": ["required"]
+    },
+    {
+      "fieldName": "icon",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultImage",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "defaultImageData",
+      "fieldType": "byte[]",
+      "fieldTypeBlobContent": "image"
+    },
+    {
+      "fieldName": "shopCategoryId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "shopUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdDate",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "TourExtraCategory",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityField": "code",
+      "otherEntityName": "imageFile",
+      "otherEntityRelationshipName": "tourExtraCategory",
+      "relationshipName": "images",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityField": "code",
+      "otherEntityName": "content",
+      "otherEntityRelationshipName": "tourExtraCategory",
+      "relationshipName": "contents",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityField": "login",
+      "otherEntityName": "user",
+      "relationshipName": "createdBy",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one",
+      "relationshipWithBuiltInEntity": true
+    },
+    {
+      "otherEntityField": "code",
+      "otherEntityName": "tourExtra",
+      "otherEntityRelationshipName": "category",
+      "relationshipName": "extra",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
