@@ -17,7 +17,46 @@
     <property name="datetimeType" value="datetime" dbms="postgresql"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094553_added_entity_Destination.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094554_added_entity_PlaceCategory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094555_added_entity_Place.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094556_added_entity_TourCategory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094557_added_entity_Tour.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094558_added_entity_TourStep.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094559_added_entity_Promotion.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094600_added_entity_TourSchedule.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094601_added_entity_TourExtraCategory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094602_added_entity_TourExtra.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094603_added_entity_Driver.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094604_added_entity_Vehicle.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094605_added_entity_Booking.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094606_added_entity_Passenger.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094607_added_entity_ImageFile.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094608_added_entity_WebPage.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094609_added_entity_Menu.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094610_added_entity_Language.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094611_added_entity_Content.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094612_added_entity_TourContent.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094613_added_entity_Prompt.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094614_added_entity_Tag.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20240610094553_added_entity_constraints_Destination.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094554_added_entity_constraints_PlaceCategory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094555_added_entity_constraints_Place.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094556_added_entity_constraints_TourCategory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094557_added_entity_constraints_Tour.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094558_added_entity_constraints_TourStep.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094600_added_entity_constraints_TourSchedule.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094601_added_entity_constraints_TourExtraCategory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094602_added_entity_constraints_TourExtra.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094605_added_entity_constraints_Booking.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094607_added_entity_constraints_ImageFile.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094608_added_entity_constraints_WebPage.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094609_added_entity_constraints_Menu.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094610_added_entity_constraints_Language.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094611_added_entity_constraints_Content.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094612_added_entity_constraints_TourContent.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20240610094613_added_entity_constraints_Prompt.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

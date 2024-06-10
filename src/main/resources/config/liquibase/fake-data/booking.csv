@@ -1,0 +1,11 @@
+id;book_datetime;no_persons;no_kids;no_pets;total;payment_type;valid;cancelled_at;remote_data;remote_id;created_date
+1;2024-06-10;31884;5541;25891;9013.39;cocoon;true;2024-06-09;../fake-data/blob/hipster.txt;studious;2024-06-09
+2;2024-06-10;1594;5128;21175;2805.31;what woefully dizzy;false;2024-06-09;../fake-data/blob/hipster.txt;upon since breakable;2024-06-10
+3;2024-06-10;6246;24432;17860;8001.75;relay pace;false;2024-06-09;../fake-data/blob/hipster.txt;juice whey get;2024-06-09
+4;2024-06-09;28741;17863;19816;6222.66;um regularly consequently;false;2024-06-10;../fake-data/blob/hipster.txt;offence consequently secret;2024-06-10
+5;2024-06-10;4218;19304;22389;464.23;gee tax gah;false;2024-06-09;../fake-data/blob/hipster.txt;macrofauna;2024-06-09
+6;2024-06-09;29002;13647;25024;21257.37;usefully carelessly;true;2024-06-10;../fake-data/blob/hipster.txt;against whoa over;2024-06-09
+7;2024-06-09;22859;1411;22550;9632.38;rumple reprocess;false;2024-06-10;../fake-data/blob/hipster.txt;competent;2024-06-09
+8;2024-06-09;12317;4835;30679;13728.61;endow watchful;false;2024-06-09;../fake-data/blob/hipster.txt;unless recklessly inasmuch;2024-06-10
+9;2024-06-09;29967;21841;11603;26973.53;numb;true;2024-06-09;../fake-data/blob/hipster.txt;usually cool till;2024-06-10
+10;2024-06-09;20570;26421;14847;20890.86;curly pertinent;false;2024-06-09;../fake-data/blob/hipster.txt;behaviour allegation;2024-06-09

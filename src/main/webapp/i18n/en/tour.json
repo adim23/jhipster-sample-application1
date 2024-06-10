@@ -1,0 +1,62 @@
+{
+  "jhipsterSampleApplication1App": {
+    "tour": {
+      "home": {
+        "title": "Tours",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Tour",
+        "createOrEditLabel": "Create or edit a Tour",
+        "notFound": "No Tours found"
+      },
+      "created": "A new Tour is created with identifier {{ param }}",
+      "updated": "A Tour is updated with identifier {{ param }}",
+      "deleted": "A Tour is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Tour {{ id }}?"
+      },
+      "detail": {
+        "title": "Tour"
+      },
+      "id": "ID",
+      "code": "Code",
+      "enabled": "Enabled",
+      "kind": "Kind",
+      "mode": "Mode",
+      "icon": "Icon",
+      "duration": "Duration",
+      "durationMeasure": "Duration Measure",
+      "petFriendly": "Pet Friendly",
+      "kidsAllowed": "Kids Allowed",
+      "smoking": "Smoking",
+      "availableFromDate": "Available From Date",
+      "availableToDate": "Available To Date",
+      "initialPrice": "Initial Price",
+      "price": "Price",
+      "badge": "Badge",
+      "rating": "Rating",
+      "widgetId": "Widget Id",
+      "externalId": "External Id",
+      "createdDate": "Created Date",
+      "defaultImage": "Default Image",
+      "defaultImageData": "Default Image Data",
+      "accessibility": "Accessibility",
+      "audioGuide": "Audio Guide",
+      "tourGuide": "Tour Guide",
+      "cssStyle": "Css Style",
+      "departure": "Departure",
+      "returnTime": "Return Time",
+      "content": "Content",
+      "steps": "Steps",
+      "images": "Images",
+      "createdBy": "Created By",
+      "meetingPoint": "Meeting Point",
+      "finishPoint": "Finish Point",
+      "tourExtra": "Tour Extra",
+      "tags": "Tags",
+      "promotions": "Promotions",
+      "category": "Category",
+      "destination": "Destination",
+      "defaultCategory": "Default Category"
+    }
+  }
+}
